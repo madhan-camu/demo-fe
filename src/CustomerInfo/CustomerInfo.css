@@ -1,0 +1,39 @@
+.customer-form {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 100%;
+}
+
+.form-input-fields {
+    display: grid;
+    grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+    grid-template-rows: repeat(auto-fill, minmax(80px, auto));
+    gap: 10px 20px;
+    overflow: auto;
+    max-height: calc(100% - 56px);
+}
+
+.form-input-fields::-webkit-scrollbar {
+    display: none;
+}
+
+.customer-actions {
+    padding-top: 10px;
+}
+
+#formik_comments, #formik_skills {
+    grid-area: auto / span 2;
+}
+
+.customer-form .form-field {
+    min-height: 80px;
+}
+
+.customer-form h4 {
+    margin: 10px auto 30px;
+}

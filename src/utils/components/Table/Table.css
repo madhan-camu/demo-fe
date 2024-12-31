@@ -1,0 +1,26 @@
+.table-container {
+    border: 1px solid #000;
+    border-radius: 8px;
+    overflow: auto;
+}
+
+/* .table-container::-webkit-scrollbar {
+    display: none;
+} */
+
+.table-container thead {
+    position: sticky;
+    top: 0;
+}
+
+.table-container td, .table-container th {
+    border-bottom: none;
+}
+
+.table-container thead th {
+    background-color: #dbdbdb;
+}
+
+table.table {
+    margin: 0;
+}

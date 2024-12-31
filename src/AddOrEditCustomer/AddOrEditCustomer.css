@@ -1,0 +1,34 @@
+/* .page {
+  display: grid;
+  grid-template-columns: calc(40% - 10px) calc(60% - 10px);
+  gap: 20px;
+  text-align: center;
+} */
+
+.section-field {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  gap: 20px;
+}
+
+.section-field label {
+  text-align: right;
+}
+
+.input-fields {
+  gap: 15px
+}
+
+.page-actions {
+  margin-top: 10px;
+}
+
+.action-container {
+  padding: 15px;
+  min-width: 600px;
+  text-align: center;
+}
+
+.action-container h4 {
+  margin: 30px auto;
+}

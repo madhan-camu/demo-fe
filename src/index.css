@@ -1,0 +1,165 @@
+body {
+  margin: 8px;
+  height: calc(100vh - 16px);
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #050433;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* #root {
+  
+} */
+
+button {
+  padding: 5px 15px;
+  background-color: #3c82dd;
+  font-weight: 600;
+  border-radius: 4px;
+  width: fit-content;
+  height: 36px;
+  min-width: 100px;
+  color: white;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+body button:not(:disabled):active {
+  background-color: #fff;
+  color: #265491;
+  border: 1px solid #265491;
+}
+
+button:not(:disabled):hover {
+  background-color: #265491;
+}
+
+button[role=delete] {
+  background-color: #df2d2d;
+}
+
+body button[role=delete]:not(:disabled):active {
+  background-color: #fff;
+  color: #ac2828;
+  border: 1px solid #ac2828;
+}
+
+button[role=delete]:not(:disabled):hover {
+  background-color: #ac2828;
+}
+
+button[role=save] {
+  background-color: #3a923a;
+}
+
+body button[role=save]:not(:disabled):active {
+  background-color: #fff;
+  color: #236d23;
+  border: 1px solid #236d23;
+}
+
+button[role=save]:not(:disabled):hover {
+  background-color: #236d23;
+}
+
+button[role=back] {
+  background-color: #535353;
+}
+
+body button[role=back]:not(:disabled):active {
+  background-color: #fff;
+  color: #383838;
+  border: 1px solid #383838;
+}
+
+button[role=back]:not(:disabled):hover {
+  background-color: #383838;
+}
+
+
+input:not([type=checkbox]),
+textarea {
+  width: 100%;
+  font-size: 14px;
+  padding: 5px 15px;
+  outline-style: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input:not([type=checkbox]):focus,
+textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+textarea {
+  height: 100px;
+}
+
+h4 {
+  color: black;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+i {
+  cursor: pointer;
+}
+
+i[role=delete] {
+  color: #df2d2d;
+}
+
+i[role=delete]:not(:disabled):hover {
+  color: #ac2828;
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button.icon-button i {
+  font-size: 18px;
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
