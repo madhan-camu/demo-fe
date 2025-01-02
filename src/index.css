@@ -102,6 +102,10 @@ textarea {
   border-radius: 4px;
 }
 
+select {
+  outline-style: none;
+}
+
 input:not([type=checkbox]):focus,
 textarea:focus {
   border-color: #007bff;

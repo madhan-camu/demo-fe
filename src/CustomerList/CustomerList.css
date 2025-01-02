@@ -42,3 +42,7 @@
     margin-top: 10px;
     height: calc(100% - 46.8px);
 }
+
+.table-actions {
+    gap: 10px;
+}

@@ -1,11 +1,11 @@
 import axios from "axios";
 import { BACKEND_BASE_URL } from "./const";
 
-async function fetchCustomerList() {
+async function fetchCustomerList({ searchTerm, skip, limit }) {
     try {
-        const { data: { data, success, message } } = await axios.get(`${BACKEND_BASE_URL}customers`);
+        const { data: { result, success, message } } = await axios.get(`${BACKEND_BASE_URL}customers`, { params: { searchTerm, skip, limit } });
         if (success) {
-            return { data, success };
+            return { result, success };
         } else {
             alert('Failed to get customer list');
             return { success, message };
@@ -18,10 +18,10 @@ async function fetchCustomerList() {
 
 async function fetchCustomer(customerId) {
     try {
-        const { data: { data, success, message } } = await axios.get(`${BACKEND_BASE_URL}customer?id=${customerId}`);
+        const { data: { result, success, message } } = await axios.get(`${BACKEND_BASE_URL}customer?id=${customerId}`);
 
         if (success) {
-            return { data, success };
+            return { result, success };
         } else {
             alert('Failed to get customer information.');
             return { success, message };
@@ -64,9 +64,9 @@ async function saveCustomer({_id, ...customer}) {
 
 async function fetchCustomerSkills() {
     try {
-        const { data: { data, success, message } } = await axios.get(`${BACKEND_BASE_URL}skills`);
+        const { data: { result, success, message } } = await axios.get(`${BACKEND_BASE_URL}skills`);
         if (success) {
-            return { data, success };
+            return { result, success };
         } else {
             alert(`Failed to get customer skills`);
             return { success, message };

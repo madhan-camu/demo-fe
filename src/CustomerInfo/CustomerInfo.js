@@ -41,9 +41,9 @@ function CustomerInfo() {
 
     async function getCustomerSkills() {
         try {
-            const { data, success } = await fetchCustomerSkillsAPI();
-            if (success && Array.isArray(data) && data.length) {
-                setSkillOptions(data);
+            const { result, success } = await fetchCustomerSkillsAPI();
+            if (success && Array.isArray(result) && result.length) {
+                setSkillOptions(result);
             }
         } catch (error) {
             console.log(error);
@@ -53,7 +53,7 @@ function CustomerInfo() {
     async function getCustomer() {
         if (customerId) {
             try {
-                const { data: customerData, success } = await fetchCustomerAPI(customerId);
+                const { result: customerData, success } = await fetchCustomerAPI(customerId);
                 if (success) {
                     const { _id, ...customer } = customerData;
                     Object.entries(customer).forEach(([field, value]) => {
